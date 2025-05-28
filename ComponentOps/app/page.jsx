@@ -2,10 +2,14 @@ import Link from "next/link"
 import { ArrowRight, Code, Download, Eye, Github, Star, Users } from "lucide-react"
 import Footer from "./components/Footer"
 
+// Import your actual components here
+import SocialIconsCircle from "./components/[id]/components/SocialIconsCircle"
+import SocialIconsMarquee from "./components/[id]/components/SocialIconsMarquee"
+
 export default function HomePage() {
   const stats = [
-    { label: "Components", value: "4+", icon: Code },
-    { label: "Downloads", value: "1.2K", icon: Download },
+    { label: "Components", value: "2+", icon: Code },
+    { label: "Downloads", value: "1K", icon: Download },
     { label: "Stars", value: "156", icon: Star },
     { label: "Users", value: "89", icon: Users },
   ]
@@ -17,14 +21,14 @@ export default function HomePage() {
       name: "Social Icons Circle",
       description: "A spinning circle of social icons with hover effects",
       category: "Social / Animation",
-      preview: "/api/placeholder/300/200",
+      previewImage: "/social-circle-preview.png",
     },
     {
       id: "socialiconsmarquee",
       name: "Social Icons Marquee",
       description: "A horizontally scrolling marquee of social icons",
       category: "Social / Animation",
-      preview: "/api/placeholder/300/200",
+      previewImage: "/social-marquee-preview.png",
     },
   ]
 
@@ -57,6 +61,7 @@ export default function HomePage() {
               >
                 <Github className="w-5 h-5" />
               </Link>
+              <span className="text-gray-400 text-sm">by Anuja Jayasinghe</span>
             </div>
           </div>
         </div>
@@ -128,10 +133,26 @@ export default function HomePage() {
               <Link key={component.id} href={`/components/${component.id}`} className="group block">
                 <div className="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden hover:border-gray-600 transition-all duration-200 hover:shadow-xl">
                   <div className="aspect-video bg-gray-700 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-600/20"></div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-6xl font-bold text-white/10">{component.name}</div>
-                    </div>
+                    {/* Render the actual component preview image here */}
+                    {component.previewImage ? (
+                      <img
+                        src={component.previewImage}
+                        alt={`${component.name} preview`}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      // Fallback if no previewImage is provided
+                      <div className="absolute inset-0 flex flex-col items-center justify-center">
+                        <img
+                          src="/gradient.svg"
+                          alt="Preview Background"
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div className="relative z-10 text-center">
+                          <div className="text-4xl font-bold text-white/10">{component.name}</div>
+                        </div>
+                      </div>
+                    )}
                   </div>
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-2">
@@ -175,6 +196,9 @@ export default function HomePage() {
             Get Started Now
             <ArrowRight className="ml-2 w-5 h-5" />
           </Link>
+          <p className="mt-8 text-gray-400 text-sm">
+            Created with ❤️ by <a href="https://anujajay.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">Anuja Jayasinghe</a>
+          </p>
         </div>
       </section>
 

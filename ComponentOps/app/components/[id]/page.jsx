@@ -21,7 +21,13 @@ export default function ComponentDetailPage({ params }) {
       description: "A rotating circle of social media icons that reveals color on hover.",
       category: "Social",
       component: SocialIconsCircle,
-      code: `"use client";
+      code: `/**
+ * Social Icons Circle Component
+ * Created by Anuja Jayasinghe [anujajay.com]
+ * https://github.com/Anuja-jayasinghe/React-Components-Library
+ */
+
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 
 const socialLinks = [
@@ -168,9 +174,13 @@ export default SocialIconsCircle;`,
         "A horizontally scrolling marquee of social media icons that reveals color when centered or hovered.",
       category: "Social",
       component: SocialIconsMarquee,
-      code: `"use client";
-import React, { useEffect, useRef, useState } from "react";
+      code: `/**
+ * Social Icons Marquee Component
+ * Created by Anuja Jayasinghe [anujajay.com]
+ * https://github.com/Anuja-jayasinghe/React-Components-Library
+ */
 
+"use client";
 const socialLinks = [
   {
     href: "https://github.com",
@@ -264,7 +274,7 @@ const SocialIconsMarquee = () => {
   return (
     <div
       ref={containerRef}
-      className="overflow-hidden h-20 bg-transparent w-full max-w-sm sm:max-w-md mx-auto"
+      className="overflow-hidden h-40 bg-transparent w-full max-w-sm sm:max-w-md mx-auto"
     >
       <div
         ref={contentRef}
@@ -417,9 +427,9 @@ export default SocialIconsMarquee;`,
               <div
                 className="rounded-lg p-8 border border-gray-700"
                 style={{
-                  background: '#1e130c', // fallback for old browsers
-                  background: '-webkit-linear-gradient(to right, #9a8478, #1e130c)', // Chrome 10-25, Safari 5.1-6
-                  background: 'linear-gradient(to right, #9a8478, #1e130c)' // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+                  backgroundImage: 'url(/gradient.svg)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
                 }}
               >
                 <ComponentToRender />

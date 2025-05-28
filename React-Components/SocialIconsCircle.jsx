@@ -1,3 +1,8 @@
+/**
+ * Social Icons Circle Component
+ * Created by Anuja Jayasinghe [anujajay.com]
+ */
+
 "use client"
 import { useEffect, useRef, useState } from "react"
 

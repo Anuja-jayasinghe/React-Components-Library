@@ -1,3 +1,8 @@
+/**
+ * Social Icons Marquee Component
+ * Created by Anuja Jayasinghe [anujajay.com]
+ */
+
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 
