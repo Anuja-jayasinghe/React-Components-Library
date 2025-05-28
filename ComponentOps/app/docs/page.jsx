@@ -8,28 +8,28 @@ export default function DocsPage() {
     <div className="min-h-screen bg-gray-900">
       <Header activePage="docs" />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">Documentation</h1>
-          <p className="text-xl text-gray-300">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="mb-8 sm:mb-12">
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3 sm:mb-4">Documentation</h1>
+          <p className="text-base sm:text-lg lg:text-xl text-gray-300">
             Learn how to use and integrate our social media components into your projects
           </p>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-8 sm:space-y-12">
           {/* Getting Started */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
-              <Zap className="w-6 h-6 mr-2 text-blue-400" />
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6 flex items-center">
+              <Zap className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-blue-400" />
               Getting Started
             </h2>
-            <div className="bg-gray-800 rounded-xl border border-gray-700 p-6">
-              <h3 className="text-lg font-semibold text-white mb-4">Quick Start</h3>
-              <p className="text-gray-300 mb-4">
+            <div className="bg-gray-800 rounded-xl border border-gray-700 p-4 sm:p-6">
+              <h3 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Quick Start</h3>
+              <p className="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">
                 Our social media components are designed to be copy-and-paste friendly. Choose between the rotating circle
                 or scrolling marquee style to showcase your social media links.
               </p>
-              <ol className="list-decimal list-inside space-y-2 text-gray-300">
+              <ol className="list-decimal list-inside space-y-2 text-sm sm:text-base text-gray-300">
                 <li>
                   Browse the{" "}
                   <Link href="/components" className="text-blue-400 hover:text-blue-300">
@@ -46,20 +46,20 @@ export default function DocsPage() {
 
           {/* Installation */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
-              <Download className="w-6 h-6 mr-2 text-blue-400" />
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6 flex items-center">
+              <Download className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-blue-400" />
               Installation
             </h2>
-            <div className="bg-gray-800 rounded-xl border border-gray-700 p-6">
-              <h3 className="text-lg font-semibold text-white mb-4">Prerequisites</h3>
-              <p className="text-gray-300 mb-4">
+            <div className="bg-gray-800 rounded-xl border border-gray-700 p-4 sm:p-6">
+              <h3 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Prerequisites</h3>
+              <p className="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">
                 Our components are built with React and styled with Tailwind CSS. Make sure you have these installed in
                 your project:
               </p>
-              <div className="bg-gray-900 rounded-lg p-4 mb-4">
-                <code className="text-green-400">npm install tailwindcss @tailwindcss</code>
+              <div className="bg-gray-900 rounded-lg p-3 sm:p-4 mb-3 sm:mb-4">
+                <code className="text-sm sm:text-base text-green-400">npm install tailwindcss @tailwindcss</code>
               </div>
-              <p className="text-gray-300">
+              <p className="text-sm sm:text-base text-gray-300">
                 All components are framework-agnostic and work with any React setup including Next.js, Create React App,
                 Vite, and more.
               </p>
@@ -68,14 +68,14 @@ export default function DocsPage() {
 
           {/* Usage */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
-              <Code className="w-6 h-6 mr-2 text-blue-400" />
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6 flex items-center">
+              <Code className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-blue-400" />
               Usage
             </h2>
-            <div className="bg-gray-800 rounded-xl border border-gray-700 p-6">
-              <h3 className="text-lg font-semibold text-white mb-4">Component Options</h3>
-              <p className="text-gray-300 mb-4">We offer two social media component styles:</p>
-              <ul className="list-disc list-inside space-y-2 text-gray-300 mb-6">
+            <div className="bg-gray-800 rounded-xl border border-gray-700 p-4 sm:p-6">
+              <h3 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Component Options</h3>
+              <p className="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">We offer two social media component styles:</p>
+              <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-300 mb-4 sm:mb-6">
                 <li>
                   <strong>SocialIconsCircle:</strong> A rotating circle of social media icons with hover effects
                 </li>
@@ -84,9 +84,9 @@ export default function DocsPage() {
                 </li>
               </ul>
 
-              <h3 className="text-lg font-semibold text-white mb-4">Example - Circle Style</h3>
-              <div className="bg-gray-900 rounded-lg p-4 mb-6">
-                <pre className="text-sm text-gray-300">
+              <h3 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Example - Circle Style</h3>
+              <div className="bg-gray-900 rounded-lg p-3 sm:p-4 mb-4 sm:mb-6">
+                <pre className="text-xs sm:text-sm text-gray-300">
                   {`// 1. Copy the component code
 import SocialIconsCircle from './components/SocialIconsCircle'
 
@@ -106,9 +106,9 @@ function App() {
                 </pre>
               </div>
 
-              <h3 className="text-lg font-semibold text-white mb-4">Example - Marquee Style</h3>
-              <div className="bg-gray-900 rounded-lg p-4">
-                <pre className="text-sm text-gray-300">
+              <h3 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Example - Marquee Style</h3>
+              <div className="bg-gray-900 rounded-lg p-3 sm:p-4">
+                <pre className="text-xs sm:text-sm text-gray-300">
                   {`// 1. Copy the component code
 import SocialIconsMarquee from './components/SocialIconsMarquee'
 
@@ -132,14 +132,14 @@ function App() {
 
           {/* Customization */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-6">Customization</h2>
-            <div className="bg-gray-800 rounded-xl border border-gray-700 p-6">
-              <h3 className="text-lg font-semibold text-white mb-4">Social Links</h3>
-              <p className="text-gray-300 mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Customization</h2>
+            <div className="bg-gray-800 rounded-xl border border-gray-700 p-4 sm:p-6">
+              <h3 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Social Links</h3>
+              <p className="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">
                 Customize the social media links by modifying the socialLinks array:
               </p>
-              <div className="bg-gray-900 rounded-lg p-4 mb-6">
-                <pre className="text-sm text-gray-300">
+              <div className="bg-gray-900 rounded-lg p-3 sm:p-4 mb-4 sm:mb-6">
+                <pre className="text-xs sm:text-sm text-gray-300">
                   {`const socialLinks = [
   {
     href: "https://github.com/Anuja-jayasinghe",
@@ -154,11 +154,11 @@ function App() {
                 </pre>
               </div>
 
-              <h3 className="text-lg font-semibold text-white mb-4">Styling</h3>
-              <p className="text-gray-300 mb-4">
+              <h3 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Styling</h3>
+              <p className="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">
                 Both components use Tailwind CSS classes and can be customized:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-300">
+              <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-300">
                 <li>Adjust the size of icons using the w-* and h-* classes</li>
                 <li>Modify animation speeds by changing the duration values</li>
                 <li>Customize the gap between icons in the marquee</li>
@@ -169,9 +169,9 @@ function App() {
 
           {/* Best Practices */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-6">Best Practices</h2>
-            <div className="bg-gray-800 rounded-xl border border-gray-700 p-6">
-              <ul className="space-y-4 text-gray-300">
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Best Practices</h2>
+            <div className="bg-gray-800 rounded-xl border border-gray-700 p-4 sm:p-6">
+              <ul className="space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-300">
                 <li>
                   <strong className="text-white">Optimize your icons:</strong> Use SVG icons for best quality and
                   performance.
@@ -198,10 +198,10 @@ function App() {
 
           {/* Support */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-6">Support</h2>
-            <div className="bg-gray-800 rounded-xl border border-gray-700 p-6">
-              <p className="text-gray-300 mb-4">Need help with the social media components?</p>
-              <ul className="space-y-2 text-gray-300">
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Support</h2>
+            <div className="bg-gray-800 rounded-xl border border-gray-700 p-4 sm:p-6">
+              <p className="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">Need help with the social media components?</p>
+              <ul className="space-y-2 text-sm sm:text-base text-gray-300">
                 <li>• Check the component documentation and examples</li>
                 <li>• Review the socialLinks configuration options</li>
                 <li>• Look at the animation and styling customization options</li>
