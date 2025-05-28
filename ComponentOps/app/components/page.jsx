@@ -19,6 +19,7 @@ export default function ComponentsPage() {
       tags: ["social", "animation", "circle", "icons"],
       complexity: "Medium",
       lastUpdated: "2024-01-20",
+      previewImage: "/placeholder-social-circle.png",
     },
     {
       id: "socialiconsmarquee",
@@ -28,10 +29,11 @@ export default function ComponentsPage() {
       tags: ["social", "animation", "marquee", "scroll"],
       complexity: "Medium",
       lastUpdated: "2024-01-20",
+      previewImage: "/placeholder-social-marquee.png",
     },
   ]
 
-  const categories = ["all", "UI Elements", "Layout", "Forms", "Navigation", "Data Display", "Social / Animation"]
+  const categories = ["all","Social / Animation", "UI Elements", "Layout", "Forms", "Navigation", "Data Display"]
 
   const filteredComponents = components.filter((component) => {
     const matchesSearch =

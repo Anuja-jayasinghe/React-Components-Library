@@ -414,7 +414,14 @@ export default SocialIconsMarquee;`,
         <div className="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
           {activeTab === "preview" && (
             <div className="p-8">
-              <div className="bg-gray-900 rounded-lg p-8 border border-gray-700">
+              <div
+                className="rounded-lg p-8 border border-gray-700"
+                style={{
+                  background: '#1e130c', // fallback for old browsers
+                  background: '-webkit-linear-gradient(to right, #9a8478, #1e130c)', // Chrome 10-25, Safari 5.1-6
+                  background: 'linear-gradient(to right, #9a8478, #1e130c)' // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+                }}
+              >
                 <ComponentToRender />
               </div>
             </div>
