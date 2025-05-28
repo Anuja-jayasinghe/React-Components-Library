@@ -61,7 +61,7 @@ export default function HomePage() {
               >
                 <Github className="w-5 h-5" />
               </Link>
-              <span className="text-gray-400 text-sm">by Anuja Jayasinghe</span>
+             
             </div>
           </div>
         </div>
