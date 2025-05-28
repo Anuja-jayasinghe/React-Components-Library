@@ -18,8 +18,8 @@ export default function ComponentsPage() {
       category: "Social / Animation",
       tags: ["social", "animation", "circle", "icons"],
       complexity: "Medium",
-      lastUpdated: "2024-01-20",
-      previewImage: "/placeholder-social-circle.png",
+      lastUpdated: "2025-05-20",
+      previewImage: "/social-circle-preview.png",
     },
     {
       id: "socialiconsmarquee",
@@ -28,8 +28,8 @@ export default function ComponentsPage() {
       category: "Social / Animation",
       tags: ["social", "animation", "marquee", "scroll"],
       complexity: "Medium",
-      lastUpdated: "2024-01-20",
-      previewImage: "/placeholder-social-marquee.png",
+      lastUpdated: "2025-05-20",
+      previewImage: "/social-marquee-preview.png",
     },
   ]
 
@@ -94,10 +94,25 @@ export default function ComponentsPage() {
             >
               {/* Preview Area */}
               <div className="aspect-video bg-gray-700 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-600/20"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-4xl font-bold text-white/10">{component.name}</div>
-                </div>
+                {component.previewImage ? (
+                  <img
+                    src={component.previewImage}
+                    alt={`${component.name} preview`}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  // Fallback when no previewImage is provided
+                  <div className="absolute inset-0 flex flex-col items-center justify-center">
+                    <img
+                      src="/gradient.svg"
+                      alt="Preview Background"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className="relative z-10 text-center">
+                       <div className="text-4xl font-bold text-white/10">{component.name}</div>
+                    </div>
+                  </div>
+                )}
                 <div className="absolute top-4 right-4 flex space-x-2">
                   <Link
                     href={`/components/${component.id}`}
