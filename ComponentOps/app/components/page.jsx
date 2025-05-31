@@ -19,7 +19,7 @@ export default function ComponentsPage() {
       tags: ["social", "animation", "circle", "icons"],
       complexity: "Medium",
       lastUpdated: "2025-05-20",
-      previewImage: "/social-circle-preview.png",
+      previewImage: "/previews/social-circle-preview.png",
     },
     {
       id: "socialiconsmarquee",
@@ -29,11 +29,61 @@ export default function ComponentsPage() {
       tags: ["social", "animation", "marquee", "scroll"],
       complexity: "Medium",
       lastUpdated: "2025-05-20",
-      previewImage: "/social-marquee-preview.png",
+      previewImage: "/previews/social-marquee-preview.png",
+    },
+    {
+      id: "404-game",
+      name: "404 Game Page",
+      description: "An interactive game-themed 404 page where users can collect coins",
+      category: "Error Pages",
+      tags: ["error", "game", "interactive", "404"],
+      complexity: "Medium",
+      lastUpdated: "2025-05-28",
+      previewImage: "/previews/404-game-preview.png",
+    },
+    {
+      id: "404-ghost",
+      name: "404 Ghost Page",
+      description: "A spooky ghost-themed 404 page with floating spirits",
+      category: "Error Pages",
+      tags: ["error", "ghost", "animation", "404"],
+      complexity: "Medium",
+      lastUpdated: "2025-05-30",
+      previewImage: "/previews/404-ghost-preview.png",
+    },
+    {
+      id: "404-glitch",
+      name: "404 Glitch Page",
+      description: "A cyberpunk-style glitch-themed 404 page with animated text",
+      category: "Error Pages",
+      tags: ["error", "glitch", "cyberpunk", "404"],
+      complexity: "Medium",
+      lastUpdated: "2025-05-26",
+      previewImage: "/previews/404-glitch-preview.png",
+    },
+    {
+      id: "404-matrix",
+      name: "404 Matrix Page",
+      description: "A Matrix-inspired 404 page with falling digital rain",
+      category: "Error Pages",
+      tags: ["error", "matrix", "terminal", "404"],
+      complexity: "Medium",
+      lastUpdated: "2025-06-01",
+      previewImage: "/previews/404-matrix-preview.png",
+    },
+    {
+      id: "404-space",
+      name: "404 Space Page",
+      description: "A cosmic-themed 404 page with floating planets and rocket",
+      category: "Error Pages",
+      tags: ["error", "space", "animation", "404"],
+      complexity: "Medium",
+      lastUpdated: "2025-05-29",
+      previewImage: "/previews/404-space-preview.png",
     },
   ]
 
-  const categories = ["all","Social / Animation", "UI Elements", "Layout", "Forms", "Navigation", "Data Display"]
+  const categories = ["all", "Social / Animation", "Error Pages", "UI Elements", "Layout", "Forms", "Navigation", "Data Display"]
 
   const filteredComponents = components.filter((component) => {
     const matchesSearch =

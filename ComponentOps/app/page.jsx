@@ -6,8 +6,8 @@ import Footer from "./components/Footer"
 import { useState } from "react"
 
 // Import your actual components here
-import SocialIconsCircle from "./components/[id]/components/SocialIconsCircle"
-import SocialIconsMarquee from "./components/[id]/components/SocialIconsMarquee"
+import SocialIconsCircle from "./components/[id]/components/SocialIcons/SocialIconsCircle"
+import SocialIconsMarquee from "./components/[id]/components/SocialIcons/SocialIconsMarquee"
 
 export default function HomePage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -25,14 +25,14 @@ export default function HomePage() {
       name: "Social Icons Circle",
       description: "A spinning circle of social icons with hover effects",
       category: "Social / Animation",
-      previewImage: "/social-circle-preview.png",
+      previewImage: "/previews/social-circle-preview.png",
     },
     {
       id: "socialiconsmarquee",
       name: "Social Icons Marquee",
       description: "A horizontally scrolling marquee of social icons",
       category: "Social / Animation",
-      previewImage: "/social-marquee-preview.png",
+      previewImage: "/previews/social-marquee-preview.png",
     },
   ]
 

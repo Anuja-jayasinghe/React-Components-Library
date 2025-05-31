@@ -1,4 +1,11 @@
 "use client";
+
+/**
+ * Social Icons Marquee Component
+ * Created by Anuja Jayasinghe [anujajay.com]
+ * https://github.com/Anuja-jayasinghe/React-Components-Library
+ */
+
 import React, { useEffect, useRef, useState } from "react";
 
 const socialLinks = [
