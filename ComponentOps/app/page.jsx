@@ -4,6 +4,7 @@ import Link from "next/link"
 import { ArrowRight, Code, Download, Eye, Github, Star, Users } from "lucide-react"
 import Footer from "./components/Footer"
 import { useState } from "react"
+import { trackEvent } from './utils/analytics'
 
 // Import your actual components here
 import SocialIconsCircle from "./components/[id]/components/SocialIcons/SocialIconsCircle"
@@ -11,6 +12,14 @@ import SocialIconsMarquee from "./components/[id]/components/SocialIcons/SocialI
 
 export default function HomePage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const handleBrowseClick = () => {
+    trackEvent('Navigation', 'Click', 'Browse Components Button')
+  }
+
+  const handleDocsClick = () => {
+    trackEvent('Navigation', 'Click', 'View Documentation Button')
+  }
 
   const stats = [
     { label: "Components", value: "2+", icon: Code },
@@ -134,6 +143,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-4">
               <Link
                 href="/components"
+                onClick={handleBrowseClick}
                 className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-sm sm:text-base font-semibold rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl w-full sm:w-auto"
               >
                 Browse Components
@@ -141,6 +151,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/docs"
+                onClick={handleDocsClick}
                 className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 border border-gray-600 text-gray-300 text-sm sm:text-base font-semibold rounded-lg hover:bg-gray-800 hover:border-gray-500 transition-all duration-200 w-full sm:w-auto"
               >
                 <Eye className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
