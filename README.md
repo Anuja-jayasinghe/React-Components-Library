@@ -1,40 +1,127 @@
-# React Components Library
+# 🌟 React Components Library — ComponentOps
 
-Created by Anuja Jayasinghe [anujajay.com]
+A modern and versatile collection of reusable **React components**, built with **Next.js** and **Tailwind CSS**, designed to accelerate your UI development workflow.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### 🚀 **Live Website:**  
+&nbsp;&nbsp;&nbsp;&nbsp;[![Website](https://img.shields.io/badge/componentops.anujajay.com-000000?style=flat&logo=google-chrome&logoColor=white)](https://componentops.anujajay.com/)  
 
-## Getting Started
+### 💻 **GitHub Repo:**  
+&nbsp;&nbsp;&nbsp;&nbsp;[![GitHub](https://img.shields.io/badge/React--Components--Library-100000?style=flat&logo=github&logoColor=white)](https://github.com/Anuja-jayasinghe/React-Components-Library)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📌 Overview
+
+ComponentOps offers a clean and extendable UI toolkit for modern React apps. Built with performance, responsiveness, and developer experience in mind, this library is perfect for portfolios, SaaS dashboards, landing pages, and beyond.
+
+> "Why build from scratch when you can plug in polished, customizable components?"
+
+---
+
+## ✨ Features
+
+* ⚛️ Built with **Next.js** and **React**
+* 🎨 Styled with **Tailwind CSS**
+* 🧠 Written in **JavaScript (JSX)** for full type safety
+* 📱 **Responsive**, mobile-friendly design
+* 🌀 Smooth **Framer Motion** animations
+* 🚀 Ready-to-use components, just import and go!
+
+---
+
+## 🧩 Components
+
+### 🔥 404 Pages
+
+Beautiful and interactive 404 error components:
+
+* `404-gameType.jsx` 🎮 — Arcade style
+* `404-ghostType.jsx` 👻 — Spooky vibes
+* `404-glitchType.jsx` 💥 — Glitch animation
+* `404-matrixType.jsx` 🧪 — Matrix-inspired
+* `404-spaceType.jsx` 🚀 — Out-of-this-world design
+
+### 🌐 Social Icons
+
+Branded social media UI pieces:
+
+* `SocialIconsMarquee.jsx` — Horizontally scrolling icons
+* `SocialIconsCircle.jsx` — Circular icon arrangement
+
+---
+
+### 🧪 Example Usage
+
+```tsx
+import { SocialIconsMarquee } from './React-Components/SocialIcon/SocialIconsMarquee';
+import { GameType404 } from './React-Components/404_pages/404-gameType';
+
+function App() {
+  return (
+    <div>
+      <SocialIconsMarquee />
+      <GameType404 />
+    </div>
+  );
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📚 Tech Stack & Dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Next.js** 15.3.2
+* **React** 19.0.0
+* **Tailwind CSS** 4.1.7
+* **Lucide React** 0.511.0
+* **TypeScript**
+* **Framer Motion**
+* **ESLint**
 
-## Learn More
+---
+## 📦 Local Installation & Usage
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Clone the repo
+https://github.com/Anuja-jayasinghe/React-Components-Library.git
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Move into the project
+cd ComponentOps
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Install dependencies
+npm install
 
-## Deploy on Vercel
+# Start dev server
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠 Development Commands
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* `npm run dev` — Start dev server
+* `npm run build` — Create production build
+* `npm run start` — Run production server
+* `npm run lint` — Check for code issues
+
+---
+## 🤝 Contributing
+
+ComponentOps is open to contributions! Feel free to fork, open issues, or submit pull requests. Ideas and suggestions are always welcome. 🛠️
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the LICENSE file for more info.
+
+---
+
+## 👤 Author
+
+* Developed by **Anuja Jayasinghe**
+  🌐 [anujajay.com](https://anujajay.com)
+
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/anujajayasinghe) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/Anuja-jayasinghe)
+
+---
+
+> Built with passion for developers — because components should be **beautiful**, **functional**, and **reusable**.
